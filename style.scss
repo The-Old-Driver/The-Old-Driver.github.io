@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+$roboto: 'Roboto',
+sans-serif;
+$helvetica: 'helvetica',
+sans-serif;
+$shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+0 3px 1px -2px rgba(0, 0, 0, 0.2),
+0 1px 5px 0 rgba(0, 0, 0, 0.12);
+$header-height: 60px;
+$side-bar-width: 250px;
+@mixin vertical-centering-flex {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+body {
+    padding-top: $header-height;
+    margin: 0;
+    position: relative;
+    font-family: $helvetica;
+}
+
+header {
+    box-shadow: $shadow;
+    height: $header-height;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    padding: 0 30px;
+    line-height: $header-height;
+    display: flex;
+    z-index: 9999;
+    .material-icons {
+        color: white;
+        font-size: 28px;
+        line-height: $header-height;
+        margin-right: 10px;
+    }
+    span {
+        color: white;
+        line-height: $header-height;
+        display: inline-block;
+        font-size: 20px;
+    }
+}
+
+.side-bar {
+    width: $side-bar-width;
+    height: 100vh;
+    box-shadow: $shadow;
+    position: absolute;
+    left: -$side-bar-width;
+    top: 0;
+    background-color: #3F51B5;
+    ul {
+        list-style-type: none;
+        margin: 0;
+    }
+    .levels {
+        padding: $header-height 0;
+        .level {
+            font-size: 20px;
+            padding: 20px 30px;
+            color: white;
+            transition: background-color 0.5s ease;
+        }
+        .level:hover {
+            background-color: black;
+        }
+        .level:hover .tasks {
+            opacity: 1;
+        }
+        .level {
+            position: relative;
+            .tasks {
+                opacity: 0;
+                position: absolute;
+                left: $side-bar-width;
+                width: $side-bar-width;
+                top: 0;
+                padding: 0;
+                box-shadow: $shadow;
+                transition: opacity .25s ease-in-out;
+                li {
+                    a {
+                        display: inline-block;
+                        width: 100%;
+                        padding: 20px 30px;
+                        text-decoration: none;
+                        font-size: 16px;
+                        color: black;
+                        transition: background-color 0.25s ease;
+                    }
+                    a:hover {
+                        color: white;
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+	@include vertical-centering-flex;
+	.prpr-container {
+		width: 100%;
+		height: 100vh;
+		background-image: url("collections/prpr.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
