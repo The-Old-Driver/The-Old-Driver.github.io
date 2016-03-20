@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  padding-top: 60px;
+  margin: 0;
+  position: relative;
+  font-family: "helvetica", sans-serif; }
+
+header {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  padding: 0 30px;
+  line-height: 60px;
+  display: flex;
+  z-index: 9999; }
+  header .material-icons {
+    color: white;
+    font-size: 28px;
+    line-height: 60px;
+    margin-right: 10px; }
+  header span {
+    color: white;
+    line-height: 60px;
+    display: inline-block;
+    font-size: 20px; }
+
+.side-bar {
+  width: 250px;
+  height: 100vh;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  position: absolute;
+  left: -250px;
+  top: 0;
+  background-color: #3F51B5; }
+  .side-bar ul {
+    list-style-type: none;
+    margin: 0; }
+  .side-bar .levels {
+    padding: 60px 0; }
+    .side-bar .levels .level {
+      font-size: 20px;
+      padding: 20px 30px;
+      color: white;
+      transition: background-color 0.5s ease; }
+    .side-bar .levels .level:hover {
+      background-color: black; }
+    .side-bar .levels .level:hover .tasks {
+      opacity: 1; }
+    .side-bar .levels .level {
+      position: relative; }
+      .side-bar .levels .level .tasks {
+        opacity: 0;
+        position: absolute;
+        left: 250px;
+        width: 250px;
+        top: 0;
+        padding: 0;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+        transition: opacity .25s ease-in-out; }
+        .side-bar .levels .level .tasks li a {
+          display: inline-block;
+          width: 100%;
+          padding: 20px 30px;
+          text-decoration: none;
+          font-size: 16px;
+          color: black;
+          transition: background-color 0.25s ease; }
+        .side-bar .levels .level .tasks li a:hover {
+          color: white;
+          background-color: black; }
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  main .prpr-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("collections/prpr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+/*# sourceMappingURL=style.css.map */
