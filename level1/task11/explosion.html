@@ -1,0 +1,147 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../thirdparty/css/angular-material.min.css">
+  <link rel="stylesheet" href="css/explosion.css">
+  <script src="../../thirdparty/js/angular.min.js"></script>
+  <script src="../../thirdparty/js/angular-animate.min.js"></script>
+  <script src="../../thirdparty/js/angular-aria.min.js"></script>
+  <script src="../../thirdparty/js/angular-messages.min.js"></script>
+  <script src="../../thirdparty/js/angular-material.min.js"></script>
+  <title>向美好的世界献上爆炎！</title>
+</head>
+<body ng-app="LazyWay" ng-controller="task11ctrl" ng-cloak ng-style="notMobile && {'width': '375px'}">
+
+  <md-toolbar class="theme">
+    <div class="md-toolbar-tools">
+      <md-button class="md-icon-button" aria-label="Back">
+        <md-icon md-svg-src="res/back_icon_24px.svg"></md-icon>
+      </md-button>
+      <h2>
+        <span>Back</span>
+      </h2>
+    </div>
+  </md-toolbar>
+
+  <md-tabs md-dynamic-height md-border-bottom md-center-tabs md-no-pagination md-stretch-tabs="always">
+    <md-tab label="Tab1"></md-tab>
+    <md-tab label="Tab2"></md-tab>
+    <md-tab label="Tab3"></md-tab>
+    <md-tab label="Tab4"></md-tab>
+  </md-tabs>
+  <br>
+
+  <md-content flex>
+    <img class="super_wide" src="res/prpr_512x256.jpg" alt="prpr">
+  </md-content>
+
+  <md-grid-list md-cols="5" md-gutter="1em" md-row-height="3:4">
+    <md-grid-tile>
+      <md-list-item layout="column">
+        <img ng-src="res/prpr_128px.jpg" class="md-avatar" alt="boom"/>
+        <span class="sub_theme_text">EXP</span>
+      </md-list-item>
+    </md-grid-tile>
+    <md-grid-tile>
+      <md-list-item layout="column">
+        <img ng-src="res/prpr_128px.jpg" class="md-avatar" alt="boom"/>
+        <span class="sub_theme_text">EXP</span>
+      </md-list-item>
+    </md-grid-tile>
+    <md-grid-tile>
+      <md-list-item layout="column">
+        <img ng-src="res/prpr_128px.jpg" class="md-avatar" alt="boom"/>
+        <span class="sub_theme_text">EXP</span>
+      </md-list-item>
+    </md-grid-tile>
+    <md-grid-tile>
+      <md-list-item layout="column">
+        <img ng-src="res/prpr_128px.jpg" class="md-avatar" alt="boom"/>
+        <span class="sub_theme_text">EXP</span>
+      </md-list-item>
+    </md-grid-tile>
+    <md-grid-tile>
+      <md-list-item layout="column">
+        <img ng-src="res/prpr_128px.jpg" class="md-avatar" alt="boom"/>
+        <span class="sub_theme_text">EXP</span>
+      </md-list-item>
+    </md-grid-tile>
+  </md-grid-list>
+
+  <br><md-divider></md-divider><br>
+
+  <div flex layout="row">
+    <div flex="33">
+        <img ng-src="res/prpr_128px.jpg" alt="boom" class="tile_pic"/>
+        <div class="tile_text">
+          <h3 class="theme_text centering">Explosion</h3>
+          <h4 class="sub_theme_text centering">Explosion 1</h4>
+        </div>
+    </div>
+    <div flex="33" class="mid_tile">
+        <img ng-src="res/prpr_128px.jpg" alt="boom" class="tile_pic"/>
+        <div class="tile_text">
+          <h3 class="theme_text centering">Explosion</h3>
+          <h4 class="sub_theme_text centering">Explosion 2</h4>
+        </div>
+    </div>
+    <div flex="33">
+        <img ng-src="res/prpr_128px.jpg" alt="boom" class="tile_pic"/>
+        <div class="tile_text">
+          <h3 class="theme_text centering">Explosion</h3>
+          <h4 class="sub_theme_text centering">Explosion 3</h4>
+        </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="grey_space"></div>
+
+  <md-toolbar class="module_head">
+    <div class="md-toolbar-tools">
+      <h2>
+        <span class="sub_theme_text">Explosion 1</span>
+      </h2>
+    </div>
+  </md-toolbar>
+  <md-divider></md-divider>
+
+  <md-grid-list md-cols="6" md-gutter="15px" md-row-height="1:1">
+    <md-grid-tile class="theme" md-rowspan="2" md-colspan="2">
+      <md-grid-tile-footer>
+        <h3>#1: (2r x 2c)</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
+    <md-grid-tile class="theme" md-rowspan="1" md-colspan="2">
+      <md-grid-tile-footer>
+        <h3>#1: (1r x 2c)</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
+    <md-grid-tile class="theme" md-rowspan="1" md-colspan="2">
+      <md-grid-tile-footer>
+        <h3>#1: (1r x 2c)</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
+    <md-grid-tile class="theme" md-rowspan="1" md-colspan="2">
+      <md-grid-tile-footer>
+        <h3>#1: (1r x 2c)</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
+    <md-grid-tile class="theme" md-rowspan="1" md-colspan="2">
+      <md-grid-tile-footer>
+        <h3>#1: (1r x 2c)</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
+  </md-grid-list>
+
+  <script type="text/javascript">  
+    angular.module('LazyWay', ['ngMaterial'])
+    .controller('task11ctrl', function($scope) {
+      if(window.innerWidth > 600 || window.innerHeight > 800) {
+        $scope.notMobile = true;
+      }
+    });
+  </script>
+  
+</body>
+</html>
