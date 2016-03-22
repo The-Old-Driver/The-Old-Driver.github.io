@@ -1,13 +1,8 @@
-<html lang="en" >
+<html lang="zh-cmn-Hans" >
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../thirdparty/css/angular-material.min.css">
   <link rel="stylesheet" href="css/explosion.css">
-  <script src="../../thirdparty/js/angular.min.js"></script>
-  <script src="../../thirdparty/js/angular-animate.min.js"></script>
-  <script src="../../thirdparty/js/angular-aria.min.js"></script>
-  <script src="../../thirdparty/js/angular-messages.min.js"></script>
-  <script src="../../thirdparty/js/angular-material.min.js"></script>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
   <title>向美好的世界献上爆炎！</title>
 </head>
 <body ng-app="LazyWay" ng-controller="task11ctrl" ng-cloak ng-style="notMobile && {'width': '375px'}">
@@ -18,7 +13,7 @@
         <md-icon md-svg-src="res/back_icon_24px.svg"></md-icon>
       </md-button>
       <h2>
-        <span>Back</span>
+        <span>Explosion Back</span>
       </h2>
     </div>
   </md-toolbar>
@@ -38,32 +33,32 @@
   <md-grid-list md-cols="5" md-gutter="1em" md-row-height="3:4">
     <md-grid-tile>
       <md-list-item layout="column">
-        <img ng-src="res/prpr_128px.jpg" class="md-avatar" alt="boom"/>
-        <span class="sub_theme_text">EXP</span>
+        <img ng-src="res/boom.jpg" class="md-avatar" alt="boom"/>
+        <span class="sub_theme_text">Boom</span>
       </md-list-item>
     </md-grid-tile>
     <md-grid-tile>
       <md-list-item layout="column">
-        <img ng-src="res/prpr_128px.jpg" class="md-avatar" alt="boom"/>
-        <span class="sub_theme_text">EXP</span>
+        <img ng-src="res/boom.jpg" class="md-avatar" alt="boom"/>
+        <span class="sub_theme_text">Boom</span>
       </md-list-item>
     </md-grid-tile>
     <md-grid-tile>
       <md-list-item layout="column">
-        <img ng-src="res/prpr_128px.jpg" class="md-avatar" alt="boom"/>
-        <span class="sub_theme_text">EXP</span>
+        <img ng-src="res/boom.jpg" class="md-avatar" alt="boom"/>
+        <span class="sub_theme_text">Boom</span>
       </md-list-item>
     </md-grid-tile>
     <md-grid-tile>
       <md-list-item layout="column">
-        <img ng-src="res/prpr_128px.jpg" class="md-avatar" alt="boom"/>
-        <span class="sub_theme_text">EXP</span>
+        <img ng-src="res/boom.jpg" class="md-avatar" alt="boom"/>
+        <span class="sub_theme_text">Boom</span>
       </md-list-item>
     </md-grid-tile>
     <md-grid-tile>
       <md-list-item layout="column">
-        <img ng-src="res/prpr_128px.jpg" class="md-avatar" alt="boom"/>
-        <span class="sub_theme_text">EXP</span>
+        <img ng-src="res/boom.jpg" class="md-avatar" alt="boom"/>
+        <span class="sub_theme_text">Boom</span>
       </md-list-item>
     </md-grid-tile>
   </md-grid-list>
@@ -72,25 +67,25 @@
 
   <div flex layout="row">
     <div flex="33">
-        <img ng-src="res/prpr_128px.jpg" alt="boom" class="tile_pic"/>
-        <div class="tile_text">
-          <h3 class="theme_text centering">Explosion</h3>
-          <h4 class="sub_theme_text centering">Explosion 1</h4>
-        </div>
+      <img ng-src="res/prpr_128px.jpg" alt="boom" class="tile_pic"/>
+      <div class="tile_text">
+        <h3 class="theme_text centering">Explosion!</h3>
+        <h4 class="sub_theme_text centering">Explosion!</h4>
+      </div>
     </div>
     <div flex="33" class="mid_tile">
-        <img ng-src="res/prpr_128px.jpg" alt="boom" class="tile_pic"/>
-        <div class="tile_text">
-          <h3 class="theme_text centering">Explosion</h3>
-          <h4 class="sub_theme_text centering">Explosion 2</h4>
-        </div>
+      <img ng-src="res/prpr_128px.jpg" alt="boom" class="tile_pic"/>
+      <div class="tile_text">
+        <h3 class="theme_text centering">Explosion!</h3>
+        <h4 class="sub_theme_text centering">Explosion!</h4>
+      </div>
     </div>
     <div flex="33">
-        <img ng-src="res/prpr_128px.jpg" alt="boom" class="tile_pic"/>
-        <div class="tile_text">
-          <h3 class="theme_text centering">Explosion</h3>
-          <h4 class="sub_theme_text centering">Explosion 3</h4>
-        </div>
+      <img ng-src="res/prpr_128px.jpg" alt="boom" class="tile_pic"/>
+      <div class="tile_text">
+        <h3 class="theme_text centering">Explosion!</h3>
+        <h4 class="sub_theme_text centering">Explosion!</h4>
+      </div>
     </div>
   </div>
   <br>
@@ -100,40 +95,146 @@
   <md-toolbar class="module_head">
     <div class="md-toolbar-tools">
       <h2>
-        <span class="sub_theme_text">Explosion 1</span>
+        <span class="sub_theme_text">Explosion Module 1</span>
       </h2>
     </div>
   </md-toolbar>
   <md-divider></md-divider>
 
-  <md-grid-list md-cols="6" md-gutter="15px" md-row-height="1:1">
-    <md-grid-tile class="theme" md-rowspan="2" md-colspan="2">
-      <md-grid-tile-footer>
-        <h3>#1: (2r x 2c)</h3>
-      </md-grid-tile-footer>
-    </md-grid-tile>
-    <md-grid-tile class="theme" md-rowspan="1" md-colspan="2">
-      <md-grid-tile-footer>
-        <h3>#1: (1r x 2c)</h3>
-      </md-grid-tile-footer>
-    </md-grid-tile>
-    <md-grid-tile class="theme" md-rowspan="1" md-colspan="2">
-      <md-grid-tile-footer>
-        <h3>#1: (1r x 2c)</h3>
-      </md-grid-tile-footer>
-    </md-grid-tile>
-    <md-grid-tile class="theme" md-rowspan="1" md-colspan="2">
-      <md-grid-tile-footer>
-        <h3>#1: (1r x 2c)</h3>
-      </md-grid-tile-footer>
-    </md-grid-tile>
-    <md-grid-tile class="theme" md-rowspan="1" md-colspan="2">
-      <md-grid-tile-footer>
-        <h3>#1: (1r x 2c)</h3>
-      </md-grid-tile-footer>
-    </md-grid-tile>
-  </md-grid-list>
+  <div class="list_container">
+    <md-grid-list md-cols="6" md-gutter="15px" md-row-height="1:1">
+      <md-grid-tile class="grid_bg" md-rowspan="2" md-colspan="2">
+        <img ng-src="res/prpr_128px.jpg" alt="boom" class="tile_pic"/>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
 
+      <md-grid-tile class="grid_bg" md-rowspan="2" md-colspan="2">
+        <img ng-src="res/prpr_128px.jpg" alt="boom" class="tile_pic"/>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+    </md-grid-list>
+  </div>
+
+  <div class="grey_space"></div>
+
+  <md-toolbar class="module_head">
+    <div class="md-toolbar-tools">
+      <h2>
+        <span class="sub_theme_text">Explosion Module 2</span>
+      </h2>
+    </div>
+  </md-toolbar>
+  <md-divider></md-divider>
+
+  <div class="list_container">
+    <md-grid-list md-cols="6" md-gutter="15px" md-row-height="1:1">
+      <md-grid-tile class="grid_bg" md-rowspan="2" md-colspan="2">
+        <img ng-src="res/prpr_128px.jpg" alt="boom" class="tile_pic"/>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+
+      <md-grid-tile class="grid_bg" md-rowspan="2" md-colspan="2">
+        <img ng-src="res/prpr_128px.jpg" alt="boom" class="tile_pic"/>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+      <md-grid-tile class="grid_bg" md-rowspan="1" md-colspan="2">
+        <h3 class="theme_text centering">Explosion</h3>
+      </md-grid-tile>
+    </md-grid-list>
+  </div>
+
+  <div class="grey_space"></div>
+  <md-content>
+    <div class="list_container">
+      <img ng-src="res/prpr_512x256.jpg" alt="boom" class="article_pic"/>
+      <div class="article_text">
+        <div class="article_text_title">爆裂魔法</div>
+        <br><br>
+        <div class="article_text_foot">10年后</div>
+      </div>
+    </div>
+  </md-content>
+
+  <md-divider></md-divider>
+
+  <md-content>
+    <div class="list_container">
+      <img ng-src="res/prpr_512x256.jpg" alt="boom" class="article_pic"/>
+      <div class="article_text">
+        <div class="article_text_title">爆裂魔法</div>
+        <br><br>
+        <div class="article_text_foot">10年后</div>
+      </div>
+    </div>
+  </md-content>
+
+  <md-divider></md-divider>
+
+  <md-content>
+    <div class="list_container">
+      <div class="article_text_title">爆裂魔法是最强的</div>
+      <div flex layout="row">
+        <div flex="33">
+          <img ng-src="res/prpr_128px.jpg" alt="boom" class="article_grid_pic"/>
+        </div>
+        <div flex="33">
+          <img ng-src="res/prpr_128px.jpg" alt="boom" class="article_grid_pic"/>
+        </div>
+        <div flex="33">
+          <img ng-src="res/prpr_128px.jpg" alt="boom" class="article_grid_pic"/>
+        </div>
+      </div><br>
+      <div class="article_text_foot">12年后</div>
+    </div>
+  </md-content>
+  
+
+  <script src="../../thirdparty/js/angular.min.js"></script>
+  <script src="../../thirdparty/js/angular-animate.min.js"></script>
+  <script src="../../thirdparty/js/angular-aria.min.js"></script>
+  <script src="../../thirdparty/js/angular-messages.min.js"></script>
+  <script src="../../thirdparty/js/angular-material.min.js"></script>
   <script type="text/javascript">  
     angular.module('LazyWay', ['ngMaterial'])
     .controller('task11ctrl', function($scope) {
