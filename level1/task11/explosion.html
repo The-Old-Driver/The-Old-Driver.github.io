@@ -1,8 +1,13 @@
 <html lang="zh-cmn-Hans" >
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/explosion.css">
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+  <script src="../../thirdparty/js/angular.min.js"></script>
+  <script src="../../thirdparty/js/angular-animate.min.js"></script>
+  <script src="../../thirdparty/js/angular-aria.min.js"></script>
+  <script src="../../thirdparty/js/angular-messages.min.js"></script>
+  <script src="../../thirdparty/js/angular-material.min.js"></script>  
+  <link rel="stylesheet" href="css/explosion.css">
   <title>向美好的世界献上爆炎！</title>
 </head>
 <body ng-app="LazyWay" ng-controller="task11ctrl" ng-cloak ng-style="notMobile && {'width': '375px'}">
@@ -22,7 +27,6 @@
     <md-tab label="Tab1"></md-tab>
     <md-tab label="Tab2"></md-tab>
     <md-tab label="Tab3"></md-tab>
-    <md-tab label="Tab4"></md-tab>
   </md-tabs>
   <br>
 
@@ -204,7 +208,7 @@
       <div class="article_text">
         <div class="article_text_title">爆裂魔法</div>
         <br><br>
-        <div class="article_text_foot">10年后</div>
+        <div class="article_text_foot">11年后</div>
       </div>
     </div>
   </md-content>
@@ -228,13 +232,7 @@
       <div class="article_text_foot">12年后</div>
     </div>
   </md-content>
-  
 
-  <script src="../../thirdparty/js/angular.min.js"></script>
-  <script src="../../thirdparty/js/angular-animate.min.js"></script>
-  <script src="../../thirdparty/js/angular-aria.min.js"></script>
-  <script src="../../thirdparty/js/angular-messages.min.js"></script>
-  <script src="../../thirdparty/js/angular-material.min.js"></script>
   <script type="text/javascript">  
     angular.module('LazyWay', ['ngMaterial'])
     .controller('task11ctrl', function($scope) {
